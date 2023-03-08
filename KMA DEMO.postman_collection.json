@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "4df8a3f8-15e7-4ba4-9746-46215d7654b4",
+		"name": "KMA DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10118590"
+	},
+	"item": [
+		{
+			"name": "Get joke",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"secret123\",\r\n    \"exclude\": \"dirty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.56.11.154:8000/content/api/v1/integration/generate",
+					"protocol": "http",
+					"host": [
+						"13",
+						"56",
+						"11",
+						"154"
+					],
+					"port": "8000",
+					"path": [
+						"content",
+						"api",
+						"v1",
+						"integration",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get wether - Paris - 2023-01-01",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.56.11.154:8000/weather?token=secret123&requester_name=Stepan Kalika&location=Paris&date=2023-01-01",
+					"protocol": "http",
+					"host": [
+						"13",
+						"56",
+						"11",
+						"154"
+					],
+					"port": "8000",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "secret123"
+						},
+						{
+							"key": "requester_name",
+							"value": "Stepan Kalika"
+						},
+						{
+							"key": "location",
+							"value": "Paris"
+						},
+						{
+							"key": "date",
+							"value": "2023-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get wether - Berlin - 2023-02-10",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.56.11.154:8000/weather?token=secret123&requester_name=Stepan Kalika&location=Berlin&date=2023-02-10",
+					"protocol": "http",
+					"host": [
+						"13",
+						"56",
+						"11",
+						"154"
+					],
+					"port": "8000",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "secret123"
+						},
+						{
+							"key": "requester_name",
+							"value": "Stepan Kalika"
+						},
+						{
+							"key": "location",
+							"value": "Berlin"
+						},
+						{
+							"key": "date",
+							"value": "2023-02-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get wether - London - 2023-01-14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.56.11.154:8000/weather?token=secret123&requester_name=Stepan Kalika&location=London&date=2023-01-14",
+					"protocol": "http",
+					"host": [
+						"13",
+						"56",
+						"11",
+						"154"
+					],
+					"port": "8000",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "secret123"
+						},
+						{
+							"key": "requester_name",
+							"value": "Stepan Kalika"
+						},
+						{
+							"key": "location",
+							"value": "London"
+						},
+						{
+							"key": "date",
+							"value": "2023-01-14"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

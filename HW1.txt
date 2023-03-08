@@ -1,0 +1,3 @@
+git repo: https://github.com/stepan-ukma/weather_api.git
+youtube video: https://youtu.be/a1JkiNyV9Ag
+
